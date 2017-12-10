@@ -1,0 +1,16 @@
+#Class Attributes:
+
+Contact - a nested struct that stores the name and number of a contact.  
+name - stores the name of the contact.  
+phone - stores the phone number.
+used is set to true if this record is currently being used, false otherwise
+list - a Contact pointer, used to store the memory address for a dynamically allocated array of Contact structures.
+cap - stores the number of elements in the array. 
+Constructor - dynamically allocates an array of Contacts, using it's argument to size the array.  Initializes cap with it's argument.  Initializes all Contact used fields to false.
+Destructor - frees the dynamically allocated memory.
+isEmpty - returns true of all used fields are set to false, true otherwise.
+isFull - returns true if all used fields are set to true, false otherwise.
+add - accepts the name and number of a contact as it's only arguments.  Stores the information in one of the unused elements.
+remove - accepts the name of a contact as it's only argument.  Removes the first matching Contact from the array by marking it's used field to false.
+clear - "empties" the array by setting all the element's used fields to false.
+find - accepts the name of a contact as it's only argument.  Returns the phone number of the first match it finds, "NO MATCH" otherwise.
