@@ -3,7 +3,6 @@
 
 #include <iostream>
 using namespace std;
-// hello my name is rahullllll
 
 class MyIntDeque{
 	
