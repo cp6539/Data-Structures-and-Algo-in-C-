@@ -4,8 +4,6 @@
 #include <iostream>
 using namespace std;
 
-//change 222
-
 class MyIntDeque{
 	
 	private:
