@@ -1,4 +1,4 @@
-### Data Structures and Algo in C++ 
-college: California State University East Bay 
-course: CS 3240
+### Data Structures and Algo in C++ </b>
+college: California State University East Bay </b> 
+course: CS 3240 </b>
 Homework Assignments and Code Related to Data Structures C++.
