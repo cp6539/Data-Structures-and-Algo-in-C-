@@ -1,0 +1,12 @@
+#LinkedList implementation of AddressBook
+#Class Attributes:
+
+Contact - this is a nested struct.  Name and phone are both type string and store the name and phone number of a contact.  list is the "head pointer" for the list.  It holds the memory address of the first Contact in the list.
+AddressBook - the constructor sets list to null.
+~AddressBook - the destructor frees the memory allocated by the AddressBook object.
+isEmpty - returns true if list is null, false otherwise.
+isFull - checks to see if there is enough free memory to create a new Contact.  It does this by creating a dummy (a temporary one you delete) Contact using dynamic memory allocation.  If successful, it deletes the Contact and then returns true, returns false otherwise.
+add - accepts the name and phone number of a new contact to add to the list.  Stores the information in a dynamically allocated Contact and appends it to the list.
+remove - accepts the name of a contact, searches the list for the name, and removes the first matching Contact in the list if found.
+clear - frees up all memory created by the AddressBook object and sets list to null.
+find - accepts the name of a contact as it's only argument.  It searches the Contacts list and returns the phone number of the first matching Contact.  If none are found, returns NONE FOUND instead.
