@@ -1,0 +1,22 @@
+Creating a Queue that can delete and insert from both ends known as a Deque. 
+Implementation is using an array.
+
+Attributes:
+
+list - a pointer that holds the memory address for a dynamically allocated array of integers.  This array stores the values asssigned to our deque.
+cap - holds the max number of values in the deque.  The "capacity" of the deque.  
+length- the current number of values stored in the deque.
+first - keeps track of the front of the deque.
+last - keeps track of the back of the deque.
+Constructor - accepts an integer as it's only argument.  Uses it to assign the appropriate value to cap, initializes length to 0, and dynamically allocates the array.
+Destructor - deletes the array.
+push_back - accepts an integer as it's only argument.  Adds the integer to the end of the deque.
+push_front - accepts an integer as it's only argument.  Inserts the integer at the front of the deque.
+pop_back - removes the integer at the end of the deque.
+pop_front - removes the integer at the front of the deque.  
+size - returns the current number of values in the deque using the length attribute.
+front - returns the value at the beginning of the deque if it's not empty, -1 otherwise.
+back - returns the value at the end of the deque if it's not empty, -1 otherwise.
+isFull - returns true if the deque is full, false otherwise.
+isEmpty - returns true if the deque is empty, false otherwise.
+clear - empties the deque.  DOES NOT DELETE THE ARRAY.
