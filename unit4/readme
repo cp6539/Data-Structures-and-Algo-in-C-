@@ -1,0 +1,24 @@
+Creating a double ended Queue known as a "Deque".
+Deque has the added ability to insert and delete from both ends.
+Implementation of this assignment is based on Linked List.
+
+Attributes:
+
+Node:  A private, nested struct
+value - holds the integer being stored in the deque.
+next - holds the memory address of the next node in the deque.
+prev - holds the memory address of the previous node in the deque.
+front -a pointer that keeps track of the first node in the deque.
+back -  a pointer that keeps track of the last node in the deque. 
+Constructor - initializes the the front and back pointers to null.
+Destructor - frees all memory used by the deque.
+push_back - accepts an integer as it's only argument.  Adds the integer to the end of the deque.
+push_front - accepts an integer as it's only argument.  Inserts the integer at the front of the deque.
+pop_back - removes the integer at the end of the deque.
+pop_front - removes the integer at the front of the deque.  
+size - returns the current number of values in the deque.
+front - returns the value at the beginning of the deque if it's not empty, -1 otherwise.
+back - returns the value at the end of the deque if it's not empty, -1 otherwise.
+isFull - returns true if the deque is full, false otherwise.
+isEmpty - returns true if the deque is empty, false otherwise.
+clear - frees all memory used by the deque, thus emptying the deque.  Leaves first and last set to null
