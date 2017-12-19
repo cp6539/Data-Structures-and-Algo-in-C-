@@ -1,0 +1,28 @@
+Class Attributes:
+
+Node - a nested structure with the following attributes:
+value - stores an integer
+left - stores the memory address of the left child
+right - stores the memory address of the right child
+root - stores the memory address of the root node.
+AVLTree - the constructor initializes root to null.
+~AVLTree - the deconstructor frees up all memory used by the object.
+height - returns the height of a tree.  Used to find the balance factor.  Accepts the root pointer for the tree to find the height of.
+rotateRight - implements the logic for a right rotation.  Accepts the pointer for the node to be rotated, by reference.
+rotateLeft - implements the logic for a left rotation.  Accepts the pointer for the node to be rotated , by reference.
+rotateRightLeft - implements the logic for a right-left rotation.  Accepts the pointer for the node to be rotated , by reference.
+rotateLeftRight - implements the logic for a left-right rotation.  Accepts the pointer for the node to be rotated , by reference.
+difference - returns balance factor for a node.   Accepts the pointer for the node as it's argument.
+balance - brings the AVLTree back into balance, if necessary.  Accepts the pointer for a node that needs to be adjusted.
+append - accepts the pointer, by reference, for a tree to add a value to and the value to be added.
+append - accepts the value to add to the tree.  Calls private append, passing the appropriate arguments.
+remove - accepts the pointer, by reference, for a tree to remove a value from and the value to be removed.  Removes the node containing the matching value, if found.
+remove - accepts a value to be removed from the tree.  Calls private remove, passing the appropriate arguments.
+find - accepts the pointer for a tree to search for a value, and the value to search for.  returns true if value is found, false otherwise.
+find - accepts a value to search the tree for.  Calls private find, passing the appropriate arguments.  Returns true if value is found, false otherwise.
+print - accepts the pointer for a tree, and displays it's contents and height.  Contents is displayed using inorder traversal.
+print - accepts no arguments and merely calls the private print, passing the appropriate arguments.
+isEmpty - returns true if the tree is empty, false otherwise.
+isFull - returns false if there are enough resources to create a new node, false otherwise.
+clear - accepts the root pointer of a tree by reference.  Frees all memory used by the tree, leaving the tree in a valid state.
+clear - calls the private clear, passing appropriate arguments.
